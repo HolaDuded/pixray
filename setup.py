@@ -2,7 +2,6 @@ pixray_version = "latest release" #@param ["latest release", "next planned relea
 branch = "release"
 if pixray_version == "next planned release":
   branch = "master"
-rm -Rf pixray
 git clone --recursive --branch $branch https://github.com/pixray/pixray
 pip install -r pixray/requirements.txt
 pip install basicsr
